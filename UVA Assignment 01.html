@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://kit.fontawesome.com/ec00019f06.js" crossorigin="anonymous"></script>
+  <title>Login Form</title>
+  <style>
+    * {
+      margin: 0px;
+    }
+    body{
+      background-color: #Efefef;
+    }
+    .container{
+      
+      margin: 15px ;
+      padding: 10px 10px 10px 10px ;
+      border: 1px solid #EEEEEE;
+      border-radius: 5px;
+      background-color: white;
+    }
+    .head{
+      background-color: #a5c36d;
+      padding: 10px ;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    p{
+      margin-top: 5px;
+      font-size: 14px;
+    }
+    h2{
+      font-family: serif;
+    }
+    
+    input,textarea,select{
+      text-decoration: none;
+      padding: 8px 0px 8px 5px;
+      margin: 10px 0px 3px 0px;
+      border: 1px solid #EEEEEE;
+      border-radius: 4px;
+      width: 96%;
+      background-color: #efefef;
+    }
+    .sub{
+      text-align: center;
+      width: 25%;
+      border-radius: 5px;
+      border: 1px solid black;
+      padding: 10px 6px 10px 6px;
+      display: inline-block;
+      background-color: #efefef;
+      margin: 6px 3px 6px 3px;
+      font-family:  monospace;
+      font-weight: 500;
+      
+    }
+    button{
+      background-color: #a5c36d;
+      margin: 20px 0px 20px 0px;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 100%;
+      color: black;
+      font-family: serif;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    
+    <div class="head">
+      <h2>Login Form</h2>
+      <p>Please fill all the required details in given form.</p>
+    </div>
+    
+    
+    <input style="width:46%" type="text" placeholder=" First Name">
+    <input style="width:47%" type="text" placeholder=" Last Name">
+    
+    
+    <input type="number" placeholder="Mobile Number">
+    
+    
+    <input type="text" placeholder=" Email Address">
+    
+    
+    <input style="width: 87%" type="text" placeholder=" Password" id="pass_input">
+    <i class="fa-solid fa-eye" style="color: black;margin-left: 5px" onclick="myFunction()"></i>
+    
+    
+    
+  
+    <textarea cols="40" rows="10" placeholder=" Address..."></textarea>
+    
+    
+    <button type="submit">Submit</button>
+  </div>
+
+<script>
+  function myFunction() {
+  var x = document.getElementById("pass_input");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+</body>
+
+</html>
