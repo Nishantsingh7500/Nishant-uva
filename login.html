@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://kit.fontawesome.com/ec00019f06.js" crossorigin="anonymous"></script>
+  <title>Login</title>
+  <style>
+    * {
+      margin: 0px;
+    }
+    body{
+      background-color: #6363E3;
+    }
+    .container{
+      
+      margin: 90px 20px 30px 20px  ;
+      padding: 10px 30px 10px 30px ;
+      border: 1px solid #EEEEEE;
+      border-radius: 5px;
+      background-color: white;
+    }
+    .head{
+      
+      padding: 10px ;
+    
+    
+    }
+   
+    h2{
+      font-family: serif;
+    }
+    
+    input,textarea,select{
+      text-decoration: none;
+      padding: 8px 0px 8px 5px;
+      margin: 15px 0px 5px 0px;
+      border: 1px solid #EEEEEE;
+      border-radius: 4px;
+      width: 96%;
+      background-color: #efefef;
+    }
+    .sub{
+      text-align: center;
+      width: 25%;
+      border-radius: 5px;
+      border: 1px solid black;
+      padding: 10px 6px 10px 6px;
+      display: inline-block;
+      background-color: #efefef;
+      margin: 6px 3px 6px 3px;
+      font-family:  monospace;
+      font-weight: 500;
+      
+    }
+    button{
+      background-color: #6363E3;
+      margin: 30px 0px 20px 18px;
+      padding: 10px;
+      border: #6363E3;
+      border-radius: 20px;
+      width: 90%;
+      color: white;
+      font-family: serif;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    
+    a{
+      text-decoration: none;
+      color: #2691DA;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <br>
+    <div class="head">
+      
+      <h2 style="text-align: center;">Login</h2>
+    </div>
+    
+    <br>
+    <input style="width:96%" type="text" placeholder=" User Name">
+
+    <input type="text" placeholder=" Email Address">
+    
+    
+    <input style="width: 85%" type="text" placeholder=" Password" id="pass_input">
+    <i id="eye" class="fa-solid fa-eye" style="color: black;margin-left: 5px" onclick="myFunction()"></i>
+
+    
+    <button type="submit">Login</button>
+    
+    <p style="margin: 2px 0px 20px 48px ;">Not a Member ? <a href="UVA Assignment 01.html">Sign Up</a></p>
+    <br>
+  </div>
+
+<script>
+  function myFunction() {
+  var x = document.getElementById("pass_input");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  
+  }
+}
+</script>
+</body>
+
+</html>
