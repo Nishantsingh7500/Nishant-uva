@@ -7,32 +7,29 @@ you take reference from the attached images
 
 <head>
   <script src="https://kit.fontawesome.com/ec00019f06.js" crossorigin="anonymous"></script>
-  <title>Login Form</title>
+  <title>Sign Up</title>
   <style>
     * {
       margin: 0px;
     }
     body{
-      background-color: #Efefef;
+      background-color: #6363E3;
     }
     .container{
       
-      margin: 15px ;
-      padding: 10px 10px 10px 10px ;
+      margin: 80px 25px 30px 25px  ;
+      padding: 10px 30px 10px 30px ;
       border: 1px solid #EEEEEE;
       border-radius: 5px;
       background-color: white;
     }
     .head{
-      background-color: #a5c36d;
+      
       padding: 10px ;
-      border: 1px solid black;
-      border-radius: 5px;
+    
+    
     }
-    p{
-      margin-top: 5px;
-      font-size: 14px;
-    }
+   
     h2{
       font-family: serif;
     }
@@ -40,7 +37,7 @@ you take reference from the attached images
     input,textarea,select{
       text-decoration: none;
       padding: 8px 0px 8px 5px;
-      margin: 10px 0px 3px 0px;
+      margin: 15px 0px 5px 0px;
       border: 1px solid #EEEEEE;
       border-radius: 4px;
       width: 96%;
@@ -60,16 +57,21 @@ you take reference from the attached images
       
     }
     button{
-      background-color: #a5c36d;
-      margin: 20px 0px 20px 0px;
+      background-color: #6363E3;
+      margin: 30px 0px 20px 15px;
       padding: 10px;
-      border: 1px solid black;
-      border-radius: 10px;
-      width: 100%;
-      color: black;
+      border: #6363E3;
+      border-radius: 20px;
+      width: 90%;
+      color: white;
       font-family: serif;
       font-weight: 500;
       font-size: 14px;
+    }
+    
+    a{
+      text-decoration: none;
+      color: #2691DA;
     }
     
   </style>
@@ -77,33 +79,31 @@ you take reference from the attached images
 
 <body>
   <div class="container">
-    
+    <br>
     <div class="head">
-      <h2>Login Form</h2>
-      <p>Please fill all the required details in given form.</p>
+      
+      <h2 style="text-align: center;">Sign Up </h2>
     </div>
     
+    <br>
+    <input style="width:47%" type="text" placeholder=" First Name">
+    <input style="width:45%" type="text" placeholder=" Last Name">
     
-    <input style="width:46%" type="text" placeholder=" First Name">
-    <input style="width:47%" type="text" placeholder=" Last Name">
     
-    
-    <input type="number" placeholder="Mobile Number">
+    <input type="number" placeholder="Mobile Number" >
     
     
     <input type="text" placeholder=" Email Address">
     
     
-    <input style="width: 87%" type="text" placeholder=" Password" id="pass_input">
-    <i class="fa-solid fa-eye" style="color: black;margin-left: 5px" onclick="myFunction()"></i>
+    <input style="width: 85%" type="text" placeholder=" Password" id="pass_input">
+    <i id="eye" class="fa-solid fa-eye" style="color: black;margin-left: 5px" onclick="myFunction()"></i>
+
     
+    <button type="submit">Sign Up</button>
     
-    
-  
-    <textarea cols="40" rows="10" placeholder=" Address..."></textarea>
-    
-    
-    <button type="submit">Submit</button>
+    <p style="margin: 2px 0px 20px 40px ;">Already a Member ? <a href="login.html">Login</a></p>
+    <br>
   </div>
 
 <script>
@@ -113,6 +113,7 @@ you take reference from the attached images
     x.type = "text";
   } else {
     x.type = "password";
+  
   }
 }
 </script>
